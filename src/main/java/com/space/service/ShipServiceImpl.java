@@ -231,7 +231,7 @@ public class ShipServiceImpl implements ShipService {
 
     private Date getOnlyYearBefore(Long millis) {
         Calendar calendar = new GregorianCalendar();
-        calendar.setTimeInMillis(millis-1);
+        calendar.setTimeInMillis(millis-3600001);
         int year = calendar.get(Calendar.YEAR);
         calendar.clear();
         calendar.set(Calendar.YEAR, year);
